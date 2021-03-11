@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(40, 43, 48);
+    color: white;
+}
+
+.btn-xl {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.centered {
+    display: table;
+    margin: 0 auto;
+}
+
+#win {
+    height: 30px;
+}

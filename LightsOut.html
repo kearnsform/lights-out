@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="LightsOut.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Lights Out</title>
+</head>
+
+<body>
+    <h1 class="display-4 centered">Lights Out</h1><br>
+    <div class="container">
+        <button type="button" class="btn btn-primary centered" data-toggle="collapse" data-target="#demo">Info</button>
+        <div id="demo" class="collapse">
+            The rules are simple. Clicking on a cell toggles that cell and each of its immediate neighbors. The goal is to turn out all the lights.
+        </div>
+    </div><br>
+    <div class="container">
+        <div class="row centered">
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+        </div>
+        <div style="height:2px;"><br></div>
+        <div class="row centered">
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+        </div>
+        <div style="height:2px;"><br></div>
+        <div class="row centered">
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+        </div>
+        <div style="height:2px;"><br></div>
+        <div class="row centered">
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+        </div>
+        <div style="height:2px;"><br></div>
+        <div class="row centered">
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+            <button type="button" class="btn btn-dark btn-xl game-btn"></button>
+        </div>
+    </div>
+    <br>
+    <div id="win">
+        <h2 hidden="true" id="youwin" class="centered">You Win!</h2>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary centered" id="newGame" onclick="restartGame();">New Game</button>
+
+</body>
+
+<script src="RandomUtils.js"></script>
+<script src="ColorUtils.js"></script>
+<script src="Button.js"></script>
+<script src="GameBoard.js"></script>
+<script src="WinCelebration.js"></script>
+<script src="GameBoardSetup.js"></script>
+<script src="LightsOut.js"></script>
+
+</html>
